@@ -1,0 +1,14 @@
+erDiagram
+ CATEGORY ||--o{ NOTE : clasifica
+ CATEGORY { bigint id PK
+ string name UK
+ datetime created_at
+ datetime updated_at }
+ NOTE { bigint id PK
+ string title
+ string author
+ datetime noted_at
+ text body
+ bigint category_id FK
+ datetime created_at
+ datetime updated_at }
